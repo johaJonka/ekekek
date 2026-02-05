@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Analog Soat</title>
+<style>
+body { margin:0; display:flex; justify-content:center; align-items:center; height:100vh; background:#000; }
+#clock { position:relative; width:50vmin; height:50vmin; border:0.8vmin solid #0f0; border-radius:50%; background:rgba(0,0,0,0.8); }
+#clock div.hand { position:absolute; bottom:50%; left:50%; transform-origin:bottom center; }
+#clock div.hour { width:2%; height:23%; background:#0f0; }
+#clock div.minute { width:1.5%; height:33%; background:#0f0; }
+#clock div.second { width:0.5%; height:40%; background:red; }
+#clock span { position:absolute; color:#0f0; font-weight:bold; }
+</style>
+</head>
+<body>
+
+<div id="clock">
+
+  <span style="top:5%; left:50%; transform:translateX(-50%);">12</span>
+  <span style="top:50%; left:95%; transform:translateY(-50%)">3</span>
+  <span style="top:92%; left:50%; transform:translateX(-50%)">6</span>
+  <span style="top:50%; left:5%; transform:translateY(-50%)">9</span>
+
+
+  <div class="hand hour" id="hour"></div>
+  <div class="hand minute" id="minute"></div>
+  <div class="hand second" id="second"></div>
+</div>
+
+<script src="clock.js"></script>
+
+</body>
+</html>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
